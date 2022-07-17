@@ -23,9 +23,22 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/app/app.component.css",
+              "node_modules/aos/dist/aos.css",
+              "node_modules/remixicon/fonts/remixicon.css"
+  
+
+
+          
             ],
-            "scripts": []
+            
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+        
+            ]
           },
           "configurations": {
             "production": {
@@ -97,5 +110,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8ad25519-6971-4d6e-8c37-dc54605459c3"
   }
 }
