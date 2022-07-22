@@ -26,6 +26,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/app/app.component.css",
               "node_modules/aos/dist/aos.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "node_modules/remixicon/fonts/remixicon.css",
               "node_modules/ngx-lightbox/lightbox.css"
          
