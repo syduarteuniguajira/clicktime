@@ -1,0 +1,69 @@
+<form autocomplete="off" (submit)="send()" [formGroup]="formContact">
+
+    <div class="row gy-4">
+
+        <div class="col-md-6">
+            <input 
+                type="text" 
+                formControlName="name" 
+                class="form-control"
+                placeholder="Nombre" 
+                [required]="true">
+            <span 
+                *ngIf="fieldNotValid('name')"
+                class="form-text text-danger">
+                El nombre es requerido
+            </span>
+        </div>
+
+        <div class="col-md-6 ">
+            <input 
+                type="email" 
+                class="form-control" 
+                formControlName="email" 
+                placeholder="Correo electrónico"
+                [required]="true">
+            <span 
+                *ngIf="fieldNotValid('email')"
+                class="form-text text-danger">
+                El correo electrónico es requerido
+            </span>
+        </div>
+
+        <div class="col-md-12">
+            <input 
+                type="text" 
+                class="form-control" 
+                formControlName="subject" 
+                placeholder="Subject" 
+                [required]="true">
+            <span
+                *ngIf="fieldNotValid('subject')"
+                class="form-text text-danger">
+                El asunto es requerido
+            </span>
+        </div>
+
+        <div class="col-md-12">
+            <textarea 
+                class="form-control" 
+                formControlName="message"
+                rows="6" 
+                placeholder="Mensaje" 
+                [required]="true">
+            </textarea>
+            <span 
+                *ngIf="fieldNotValid('message')"
+                class="form-text text-danger">
+                El mensaje es requerido
+            </span>
+        </div>
+
+        
+        <button class="btn btn btn-outline-primary" type="submit">
+            <span class="glyphicon glyphicon-share-alt"></span>
+            Enviar
+        </button>
+
+    </div>
+</form>

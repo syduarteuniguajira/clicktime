@@ -701,3 +701,13 @@
   font-size: 14px;
   margin-bottom: 0;
 }
+
+
+.centerdiv {
+  justify-content: center;
+  background-color: red;
+}
+
+body {
+  padding: 15px;
+}
