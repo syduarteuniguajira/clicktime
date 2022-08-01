@@ -12,7 +12,7 @@
             <span 
                 *ngIf="fieldNotValid('name')"
                 class="form-text text-danger">
-                El nombre es requerido
+                El nombre es requerido*
             </span>
         </div>
 
@@ -26,7 +26,7 @@
             <span 
                 *ngIf="fieldNotValid('email')"
                 class="form-text text-danger">
-                El correo electrónico es requerido
+                El correo electrónico es requerido*
             </span>
         </div>
 
@@ -35,12 +35,12 @@
                 type="text" 
                 class="form-control" 
                 formControlName="subject" 
-                placeholder="Subject" 
+                placeholder="Asunto" 
                 [required]="true">
             <span
                 *ngIf="fieldNotValid('subject')"
                 class="form-text text-danger">
-                El asunto es requerido
+                El asunto es requerido*
             </span>
         </div>
 
@@ -55,15 +55,18 @@
             <span 
                 *ngIf="fieldNotValid('message')"
                 class="form-text text-danger">
-                El mensaje es requerido
+                El mensaje es requerido*
             </span>
         </div>
 
         
-        <button class="btn btn btn-outline-primary" type="submit">
+        <button [disabled]="loading" class="btn btn btn-outline-primary" type="submit">
             <span class="glyphicon glyphicon-share-alt"></span>
             Enviar
         </button>
 
+        <mat-progress-bar mode="buffer" *ngIf="loading"></mat-progress-bar>
+
     </div>
 </form>
+

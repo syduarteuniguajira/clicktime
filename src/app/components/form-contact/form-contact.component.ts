@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MailerService } from 'src/app/services/mailer.service';
+import Swal from 'sweetalert2';
 import { MailStructure } from '../../interfaces/mailer.interface';
 
 @Component({
@@ -37,6 +38,8 @@ export class FormContactComponent implements OnInit {
     ]
   });
 
+  public loading: boolean = false;
+
   constructor(
     private formBuilder: FormBuilder,
     private mailerService: MailerService
@@ -62,12 +65,24 @@ export class FormContactComponent implements OnInit {
       subject: this.formContact.get("subject")?.value,
       message: this.formContact.get("message")?.value
     }
+    this.loading = true;
     this.mailerService.sendEmail(mail)
       .subscribe(response => {
         console.log(response)
         this.formContact.reset();
+        this.loading = false;
+        this.alertFormContact();
       });
   }
 
+  public alertFormContact() {
+    Swal.fire({
+      position: 'top',
+      icon: 'success',
+      title: 'Te has comunicado con nostros',
+      showConfirmButton: false,
+      timer: 1300
+    })
+  }
 
 }

@@ -1,0 +1,33 @@
+/* mat-card {
+    margin-top: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 20px;
+    stroke-width: 2px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+ */
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #012970;
+    text-decoration: none;
+}
+
+.port-item {
+    box-shadow: 3px;
+    margin-top: 35px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.port-item:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+mat-card {
+    height: 100%;
+}

@@ -1,0 +1,26 @@
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
+
+    <div fxFlex="30" fxFlex.lg="15" fxFlex.sm="100" *ngFor="let skill of skills">
+        <div class="skill-item">
+
+            <div class="imgskill">
+                <img [src]="skill.img">
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" [style]="'width: ' + skill.percent + '%;'"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{skill.percent}}%</div>
+            </div>
+
+
+            <div class="skill">
+                {{skill.name}}
+            </div>
+            
+
+
+        </div>
+
+    </div>
+
+</div>

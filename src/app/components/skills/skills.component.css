@@ -1,0 +1,21 @@
+
+
+.skill {
+    color: #012970;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.imgskill {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
