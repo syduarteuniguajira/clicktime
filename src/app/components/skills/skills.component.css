@@ -10,8 +10,8 @@
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 20px;
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
 }
 
 
@@ -19,3 +19,8 @@ img {
     width: 100%;
     height: auto;
 }
+
+.progress-bar-darkblue{
+    background-color:  #012970 !important;
+}
+  
