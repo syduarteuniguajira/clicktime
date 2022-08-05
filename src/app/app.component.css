@@ -597,87 +597,6 @@
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team {
-  background: #fff;
-  padding: 60px 0;
-}
-.team .member {
-  overflow: hidden;
-  text-align: center;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  transition: 0.3s;
-}
-.team .member .member-img {
-  position: relative;
-  overflow: hidden;
-}
-.team .member .member-img:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  background: url(../assets/img/team-shape.svg) no-repeat center bottom;
-  background-size: contain;
-  z-index: 1;
-}
-.team .member .social {
-  position: absolute;
-  right: -100%;
-  top: 30px;
-  opacity: 0;
-  border-radius: 4px;
-  transition: 0.5s;
-  background: rgba(255, 255, 255, 0.3);
-  z-index: 2;
-}
-.team .member .social a {
-  transition: color 0.3s;
-  color: rgba(1, 41, 112, 0.5);
-  margin: 15px 12px;
-  display: block;
-  line-height: 0;
-  text-align: center;
-}
-.team .member .social a:hover {
-  color: rgba(1, 41, 112, 0.8);
-}
-.team .member .social i {
-  font-size: 18px;
-}
-.team .member .member-info {
-  padding: 10px 15px 20px 15px;
-}
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #012970;
-}
-.team .member .member-info span {
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  padding-top: 15px;
-  line-height: 26px;
-  color: #5e5e5e;
-}
-.team .member:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-}
-.team .member:hover .social {
-  right: 8px;
-  opacity: 1;
-}
 
 .contact .info-box {
   color: #444444;
@@ -702,11 +621,7 @@
   margin-bottom: 0;
 }
 
-.footer {
-  background: #d1d1d1;
-  padding: 0 0 30px 0;
-  font-size: 14px;
-}
+
 .footer .footer-newsletter {
   padding: 50px 0;
   background: #9c9c9c;
@@ -731,7 +646,7 @@
 }
 
 
-.footer .footer-top {
+.footer {
   background: white no-repeat right top;
   background-size: contain;
   border-top: 1px solid #e1ecff;
@@ -739,22 +654,24 @@
   padding: 60px 0 30px 0;
 }
 @media (max-width: 992px) {
-  .footer .footer-top {
+  .footer  {
     background-position: center bottom;
   }
 }
-.footer .footer-top .footer-info {
+.footer  .footer-info {
   margin-bottom: 30px;
+
 }
-.footer .footer-top .footer-info .logo {
+.footer  .footer-info .logo {
   line-height: 0;
   margin-bottom: 15px;
+
 }
-.footer .footer-top .footer-info .logo img {
+.footer .footer-info .logo img {
   max-height: 40px;
   margin-right: 6px;
 }
-.footer .footer-top .footer-info .logo span {
+.footer  .footer-info .logo span {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -762,13 +679,13 @@
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
-.footer .footer-top .footer-info p {
+.footer  .footer-info p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Nunito", sans-serif;
 }
-.footer .footer-top .social-links a {
+.footer  .social-links a {
   font-size: 20px;
   display: inline-block;
   color: rgba(1, 41, 112, 0.5);
@@ -776,10 +693,10 @@
   margin-right: 10px;
   transition: 0.3s;
 }
-.footer .footer-top .social-links a:hover {
+.footer  .social-links a:hover {
   color: #012970;
 }
-.footer .footer-top h4 {
+.footer  h4 {
   font-size: 16px;
   font-weight: bold;
   color: #012970;
@@ -787,38 +704,38 @@
   position: relative;
   padding-bottom: 12px;
 }
-.footer .footer-top .footer-links {
+.footer .footer-links {
   margin-bottom: 30px;
 }
-.footer .footer-top .footer-links ul {
+.footer  .footer-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.footer .footer-top .footer-links ul i {
+.footer .footer-links ul i {
   padding-right: 2px;
   color: #d0d4fc;
   font-size: 12px;
   line-height: 0;
 }
-.footer .footer-top .footer-links ul li {
+.footer  .footer-links ul li {
   padding: 10px 0;
   display: flex;
   align-items: center;
 }
-.footer .footer-top .footer-links ul li:first-child {
+.footer  .footer-links ul li:first-child {
   padding-top: 0;
 }
-.footer .footer-top .footer-links ul a {
+.footer  .footer-links ul a {
   color: #013289;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
-.footer .footer-top .footer-links ul a:hover {
+.footer  .footer-links ul a:hover {
   color: #4154f1;
 }
-.footer .footer-top .footer-contact p {
+.footer  .footer-contact p {
   line-height: 26px;
 }
 .footer .copyright {
@@ -842,26 +759,86 @@ body {
   padding: 15px;
 }
 
-.float{
+.float-wp{
 	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
+	width:40px;
+	height:40px;
+	bottom:45px;
 	right:40px;
-	background-color:#25d366;
+	background-color: #012970;;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
   font-size:30px;
 	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+  z-index:300;
 }
-.float:hover {
+.float-ig{
+	position:fixed;
+	width:42px;
+	height:42px;
+	bottom:90px;
+	right:40px;
+	background-color:#012970;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:300;
+}
+.float-face{
+	position:fixed;
+	width:40px;
+	height:40px;
+	bottom:140px;
+	right:40px;
+	background-color:#012970;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:300;
+}
+.float-twt{
+	position:fixed;
+	width:40px;
+	height:40px;
+	bottom:185px;
+	right:40px;
+	background-color:#012970;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:300;
+}
+.float-wp:hover {
 	text-decoration: none;
 	color: #25d366;
   background-color:#fff;
 }
+.float-twt:hover {
+	text-decoration: none;
+	color: #25a7d3;
+  background-color:#fff;
+}
+.float-ig:hover {
+	text-decoration: none;
+	color: #b42998;
+  background-color:#fff;
+}
+.float-face:hover {
+	text-decoration: none;
+	color: #1006cf;
+  background-color:#fff;
+}
 
-.my-float{
-	margin-top:16px;
+.my-float { 
+	margin-top:7px;
+}
+.my-float-wha{ 
+	margin-top:5px;
 }

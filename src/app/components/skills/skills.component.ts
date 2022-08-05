@@ -63,6 +63,16 @@ export class SkillsComponent implements OnInit {
       name: "Google Ads",
       img: "assets/img/skills/ads.png",
       percent: "90"
+    },
+    {
+      name: "BOOTSTRAP",
+      img: "assets/img/skills/bootstrap.png",
+      percent: "90"
+    },
+    {
+      name: "MYSQL",
+      img: "assets/img/skills/mysql.png",
+      percent: "90"
     }
   ];
 
