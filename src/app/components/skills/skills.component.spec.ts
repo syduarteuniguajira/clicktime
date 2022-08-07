@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CarouselComponent } from 'ngx-bootstrap/carousel';
 import { SkillsComponent } from './skills.component';
 
 describe('SkillsComponent', () => {

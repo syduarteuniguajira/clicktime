@@ -8,16 +8,16 @@ import { AppComponent } from './app.component';
 import { FormContactComponent } from './components/form-contact/form-contact.component';
 import { MemberTeamComponent } from './components/member-team/member-team.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
-
 import {MatCardModule} from '@angular/material/card';
-
 import {MatGridListModule} from '@angular/material/grid-list';
-
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { SkillsComponent } from './components/skills/skills.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { AlertModule,AlertConfig } from 'ngx-bootstrap/alert';
+
+
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     FormContactComponent,
     MemberTeamComponent,
     PortfolioComponent,
-    SkillsComponent
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,9 +37,10 @@ import { SkillsComponent } from './components/skills/skills.component';
     MatGridListModule,
     MatProgressSpinnerModule,
     MatProgressBarModule,
-    SweetAlert2Module
+    SweetAlert2Module,
+    CarouselModule.forRoot(),
   ],
-  providers: [],
+  providers: [AlertConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

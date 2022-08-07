@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 interface Skill {
   name: string;
   img: string;
