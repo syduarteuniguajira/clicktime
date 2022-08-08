@@ -12,6 +12,7 @@ interface Work {
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
+  
 
   public works: Work[] = [
     {

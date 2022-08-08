@@ -14,9 +14,9 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { SkillsComponent } from './components/skills/skills.component';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { AlertModule,AlertConfig } from 'ngx-bootstrap/alert';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { RouterModule } from '@angular/router';
+import{ BrowserAnimationsModule }from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -28,8 +28,11 @@ import { AlertModule,AlertConfig } from 'ngx-bootstrap/alert';
     SkillsComponent,
   ],
   imports: [
+    BrowserAnimationsModule,
+    RouterModule,
     BrowserModule,
     ReactiveFormsModule,
+    CarouselModule,
     AppRoutingModule,
     HttpClientModule,
     FlexLayoutModule,
@@ -38,9 +41,8 @@ import { AlertModule,AlertConfig } from 'ngx-bootstrap/alert';
     MatProgressSpinnerModule,
     MatProgressBarModule,
     SweetAlert2Module,
-    CarouselModule.forRoot(),
   ],
-  providers: [AlertConfig],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

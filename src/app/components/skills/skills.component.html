@@ -1,20 +1,12 @@
 
-<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
-
-    <div class="carousel-slide" fxFlex="30" fxFlex.lg="15" fxFlex.sm="100" *ngFor="let skill of skills">
-        <div class="skill-item">
-
-            <div class="imgskill">
-                <img [src]="skill.img">
-            </div>
-
-       
 
 
-            
-        </div>
+    <owl-carousel-o class="carousel-slider" [options]="customOptions">
 
-    </div>
+        <ng-container *ngFor="let skill of skills">
+            <ng-template carouselSlide>
+            <img  [src]="skill.img" [title]="skill.name">
+            </ng-template>
+        </ng-container>
 
-</div>
-
+    </owl-carousel-o>

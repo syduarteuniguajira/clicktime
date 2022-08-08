@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import  {  OwlOptions  }  from 'ngx-owl-carousel-o' ; 
 interface Skill {
   name: string;
   img: string;
@@ -11,6 +12,36 @@ interface Skill {
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
+
+  
+  customOptions: any = {
+    autoplay:true,
+    autoplayTimeout:1500,
+    margin:50,
+    autoplayHoverPause:false,
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
+    navSpeed: 700,
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+    nav: false  
+  }
+
 
   public skills: Skill[] = [
     {
@@ -39,15 +70,16 @@ export class SkillsComponent implements OnInit {
       percent: "70"
     },
     {
-      name: "Kotlin",
-      img: "assets/img/skills/kt.png",
-      percent: "75"
-    },
-    {
       name: "Typescript",
       img: "assets/img/skills/ts.png",
       percent: "80"
     },
+    {
+      name: "Kotlin",
+      img: "assets/img/skills/kt.png",
+      percent: "75"
+    },
+    
     {
       name: "NodeJs",
       img: "assets/img/skills/ndjs.png",
@@ -70,7 +102,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       name: "MYSQL",
-      img: "assets/img/skills/mysql.png",
+      img: "assets/img/skills/msql.jpg",
       percent: "90"
     }
   ];
