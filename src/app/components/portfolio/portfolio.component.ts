@@ -12,6 +12,31 @@ interface Work {
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
+  customOptions: any = {
+    animateOut: 'fadeOut',
+    animateIn: 'flipInX',
+    dots: false,
+    loop: true,
+    margin:30,
+    stagePadding:30,
+    smartSpeed:450,
+    
+    responsive: {
+      0: {
+        items: 1
+      },
+      480: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+    nav: false  
+  }
   
 
   public works: Work[] = [

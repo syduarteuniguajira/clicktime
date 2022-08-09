@@ -16,18 +16,18 @@ a:active {
     text-decoration: none;
 }
 
-.port-item {
-    box-shadow: 3px;
-    margin-top: 35px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
 
 .port-item:hover {
     transform: scale(1.1);
-    transition: .5s;
+    transition: .5s;    
 }
 
-mat-card {
-    height: 100%;
-}
+
+
+.carousel-slider    {  
+    
+    padding-bottom: 10px; 
+ 
+ }
+
+/* Feel free to change duration  */ 
