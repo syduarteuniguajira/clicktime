@@ -379,6 +379,7 @@
 .about p {
   margin: 15px 0 30px 0;
   line-height: 24px;
+  font-size: 20px;
 }
 .about .btn-read-more {
   line-height: 0;
@@ -507,7 +508,7 @@
   margin-right: 15px;
 }
 .features .feature-icons .content .icon-box p {
-  font-size: 15px;
+  font-size: 18px;
   color: #848484;
 }
 
