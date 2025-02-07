@@ -105,6 +105,15 @@ export class SkillsComponent implements OnInit {
       img: "assets/img/skills/msql.jpg",
       percent: "90"
     }
+
+ 
+    
+
+
+
+
+
+
   ];
 
   constructor() { }
